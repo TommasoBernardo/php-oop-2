@@ -7,13 +7,13 @@ class Accessory extends Product
     public $material;
     public $typeAccessory;
 
-    public function __construct(Category $_category, $_brand, $_title, $_description, $_type, $_price, $_image, $_color, $_material, $type)
+    public function __construct(Category $_category, $_brand, $_title, $_description, $_type, $_price, $_image, $_color, $_material, $_typeAccesory)
     {
         parent::__construct($_category, $_brand, $_title, $_description, $_type, $_price, $_image);
 
         $this->color = $_color;
         $this->material = $_material;
-        $this->typeAccessory = $_type;
+        $this->typeAccessory = $_typeAccesory;
     }
 
     public function getColor()
